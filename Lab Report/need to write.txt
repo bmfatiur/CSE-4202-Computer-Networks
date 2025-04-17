@@ -1,0 +1,18 @@
+==============1====================
+Procedure:
+1. Open the CISCO Packet Tracer software.
+2. From the End Devices section on the left side of the interface, drag and drop 2 PCs onto the workspace. These will be referred to as PC1 and PC2.
+3. From the Network Devices section, select Hub from the list and place a hub in the workspace.
+4. Use Straight-through Ethernet cables to connect PC1 and PC2 to the hub:
+Click on PC1 and select the FastEthernet0 port. Then click on the hub and connect it to Port 1.
+Click on PC2 and connect FastEthernet0 to the hub’s Port 2.
+5. Assign IP addresses to the PCs:
+On PC1, go to Desktop → IP Configuration and assign the IP address 192.168.1.1 with a subnet mask of 255.255.255.0.
+On PC2, go to Desktop → IP Configuration and assign the IP address 192.168.1.2 with the same subnet mask 255.255.255.0.
+6. Test the connection between PC1 and PC2 using the ping command:
+On PC1, open the Command Prompt from the Desktop and type ping 192.168.1.2 .
+Observe the replies from PC2 to verify successful communication.
+7. Switch to Simulation Mode in Packet Tracer and run the ping test again. Observe the packet flow between the two PCs as the ICMP request and reply messages pass through the hub.
+
+
+
